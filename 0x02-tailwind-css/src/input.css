@@ -1,8 +1,9 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@import 'tailwindcss/preflight';
 @import 'tailwindcss/utilities';
+
 @media (min-width: 768px) {
   main {
+    display: grid;
     grid-template-columns: 1fr;
   }
 }
