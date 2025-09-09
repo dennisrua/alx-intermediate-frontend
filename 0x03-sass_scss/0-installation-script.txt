@@ -1,0 +1,47 @@
+Steps I Followed to Install Sass on Windows
+===========================================
+
+1. I installed Node.js
+   - I went to https://nodejs.org
+   - I downloaded and installed the LTS version (recommended).
+   - After installation, I confirmed it worked by running in Command Prompt or Git Bash:
+        node -v
+        npm -v
+     (Both showed version numbers.)
+
+2. I installed Sass Globally
+   - I ran this command in Git Bash or Command Prompt:
+        npm install -g sass
+
+3. I verified Sass Installation
+   - I checked the version:
+        sass --version
+     (It displayed a version number.)
+
+4. I created a Sass File
+   - Inside my project folder, I created a file named:
+        style.scss
+   - Example content I added:
+        $primary: #0e6cff;
+
+        body {
+          background: $primary;
+          color: white;
+        }
+
+5. I compiled Sass to CSS
+   - I ran:
+        sass style.scss style.css
+   - This created style.css in the same folder.
+
+6. I used Watch Mode (auto-compile on save)
+   - I ran:
+        sass --watch style.scss:style.css
+   - Every time I saved style.scss, style.css updated automatically.
+
+7. I linked CSS in HTML
+   - I added this line inside my HTML <head>:
+        <link rel="stylesheet" href="style.css">
+
+Done 
+I had successfully used Sass in my Windows projects.
